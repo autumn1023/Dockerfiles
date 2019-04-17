@@ -63,5 +63,4 @@ RUN apk upgrade --update && \
            "$JAVA_HOME/jre/lib/jfr.jar" \
            "$JAVA_HOME/jre/lib/jfr" \
            "$JAVA_HOME/jre/lib/oblique-fonts" && \
-    apk del build-dependencies && \
-    rm -rf /tmp/* /var/cache/apk/*
+    apk del build-dependencies && rm -rf /tmp/* /var/cache/apk/*
