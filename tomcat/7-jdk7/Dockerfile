@@ -12,7 +12,8 @@ RUN mkdir -p "${CATALINA_HOME}"
 WORKDIR $CATALINA_HOME
 
 RUN set -x \
-  && apk --no-cache add --virtual build-dependencies  wget  bash  ca-certificates tar alpine-sdk gnupg \
+  && apk update \
+  && apk --no-cache add --virtual build-dependencies  wget  bash  ca-certificates tar alpine-sdk gnupg  \
 #  && gpg --keyserver pool.sks-keyservers.net --recv-keys \
   && gpg --keyserver pgp.mit.edu --recv-keys --recv-keys \
 #  && gpg --keyserver subkeys.pgp.net --recv-keys --recv-keys \
