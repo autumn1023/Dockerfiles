@@ -24,7 +24,7 @@ RUN apk upgrade --update && \
         "http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION}/UnlimitedJCEPolicyJDK${JAVA_VERSION}.zip" && \
     #gunzip /tmp/java.tar.gz && \
     #gunzip /tmp/java.tar.gz && \
-    tar -C /tmp -zvxf /tmp/java.tar.gz && \
+    #tar -C /tmp -zvxf /tmp/java.tar.gz && \
     tar  -xvf /tmp/java.tar.gz -C /tmp && \
     mkdir -p "/usr/lib/jvm" && \
     mv "/tmp/jdk1.${JAVA_VERSION}.0_${JAVA_UPDATE}" "/usr/lib/jvm/java-${JAVA_VERSION}-oracle" && \
